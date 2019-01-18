@@ -1,0 +1,6 @@
+# ivector-mean scp:xvector_nnet_1a/xvectors_test/xvector.scp xvector_nnet_1a/xvectors_test/mean.vec 
+# Started at Sat Jan  5 01:48:49 CST 2019
+#
+ivector-mean scp:xvector_nnet_1a/xvectors_test/xvector.scp xvector_nnet_1a/xvectors_test/mean.vec 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jan  5 01:48:49 CST 2019, elapsed time 0 seconds

@@ -1,0 +1,226 @@
+# nnet3-xvector-compute --use-gpu=no --min-chunk-size=20 --chunk-size=400 "nnet3-copy --nnet-config=xvector_nnet_1a/extract.config xvector_nnet_1a/final.raw - |" scp:xvector_nnet_1a/xvectors_test/subsegments_data/split1/1/feats.scp ark,scp:xvector_nnet_1a/xvectors_test/xvector.1.ark,xvector_nnet_1a/xvectors_test/xvector.1.scp 
+# Started at Tue Jan 15 09:14:50 CST 2019
+#
+nnet3-xvector-compute --use-gpu=no --min-chunk-size=20 --chunk-size=400 'nnet3-copy --nnet-config=xvector_nnet_1a/extract.config xvector_nnet_1a/final.raw - |' scp:xvector_nnet_1a/xvectors_test/subsegments_data/split1/1/feats.scp ark,scp:xvector_nnet_1a/xvectors_test/xvector.1.ark,xvector_nnet_1a/xvectors_test/xvector.1.scp 
+nnet3-copy --nnet-config=xvector_nnet_1a/extract.config xvector_nnet_1a/final.raw - 
+WARNING (nnet3-copy[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node tdnn6.relu is never used to compute any output.
+WARNING (nnet3-copy[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node tdnn6.batchnorm is never used to compute any output.
+WARNING (nnet3-copy[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node output.affine is never used to compute any output.
+WARNING (nnet3-copy[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node output.log-softmax is never used to compute any output.
+LOG (nnet3-copy[5.5.145~1-b50a]:main():nnet3-copy.cc:114) Copied raw neural net from xvector_nnet_1a/final.raw to -
+WARNING (nnet3-xvector-compute[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node tdnn6.relu is never used to compute any output.
+WARNING (nnet3-xvector-compute[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node tdnn6.batchnorm is never used to compute any output.
+WARNING (nnet3-xvector-compute[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node output.affine is never used to compute any output.
+WARNING (nnet3-xvector-compute[5.5.145~1-b50a]:Check():nnet-nnet.cc:789) Node output.log-softmax is never used to compute any output.
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 8 orphan nodes.
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 13 orphan components.
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:Collapse():nnet-utils.cc:1378) Added 5 components, removed 13
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_01-00000000-00000094, using chunk size  of 94
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000000-00000149, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000074-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000149-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_02-00000375-00000506, using chunk size  of 131
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_03-00000000-00000123, using chunk size  of 123
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_04-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_04-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_04-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_04-00000225-00000331, using chunk size  of 106
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_05-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_05-00000075-00000208, using chunk size  of 133
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_06-00000375-00000472, using chunk size  of 97
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_07-00000375-00000479, using chunk size  of 104
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_08-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_08-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_08-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_08-00000225-00000335, using chunk size  of 110
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_09-00000600-00000746, using chunk size  of 146
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_10-00000600-00000711, using chunk size  of 111
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_11-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000825-00000975, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000900-00001050, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_12-00000975-00001082, using chunk size  of 107
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_13-00000600-00000676, using chunk size  of 76
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000825-00000975, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000900-00001050, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00000975-00001125, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001050-00001200, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001125-00001275, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001200-00001350, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001275-00001425, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001350-00001500, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001425-00001575, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001500-00001650, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001575-00001725, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_14-00001650-00001751, using chunk size  of 101
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_15-00000000-00000088, using chunk size  of 88
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_16-00000825-00000919, using chunk size  of 94
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_17-00000825-00000950, using chunk size  of 125
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000825-00000975, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000900-00001050, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_18-00000975-00001069, using chunk size  of 94
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000225-00000374, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000300-00000449, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000374-00000524, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_19-00000450-00000598, using chunk size  of 148
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_20-00000000-00000068, using chunk size  of 68
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000825-00000975, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000900-00001050, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_21-00000975-00001056, using chunk size  of 81
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000375-00000525, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000450-00000600, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000525-00000675, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000600-00000750, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000675-00000825, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000750-00000900, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000825-00000975, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000900-00001050, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00000975-00001125, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001050-00001200, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001125-00001275, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001200-00001350, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001275-00001425, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001350-00001500, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001425-00001575, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001500-00001650, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001575-00001725, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001650-00001800, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001725-00001875, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001800-00001950, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001875-00002025, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00001950-00002100, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00002025-00002175, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00002100-00002250, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00002175-00002325, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00002250-00002400, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_22-00002325-00002462, using chunk size  of 137
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000000-00000150, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000075-00000225, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000150-00000300, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000225-00000375, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000300-00000450, using chunk size  of 150
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:165) Chunk size of 400 is greater than the number of rows in utterance: test_23-00000375-00000502, using chunk size  of 127
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:221) Time taken 7.7963s: real-time factor assuming 100 frames/sec is 0.0262493
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:main():nnet3-xvector-compute.cc:224) Done 204 utterances, failed for 0
+LOG (nnet3-xvector-compute[5.5.145~1-b50a]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.176 seconds taken in nnet3 compilation total (breakdown: 0.158 compilation, 0.0107 optimization, 0 shortcut expansion, 0.00237 checking, 5.03e-05 computing indexes, 0.0056 misc.) + 0 I/O.
+# Accounting: time=8 threads=1
+# Ended (code 0) at Tue Jan 15 09:14:58 CST 2019, elapsed time 8 seconds

@@ -1,0 +1,9 @@
+# apply-cmvn-sliding --norm-vars=false --center=true --cmn-window=300 scp:data/test/split1/1/feats.scp ark:- | copy-feats --compress=true --write-num-frames=ark,t:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/log/utt2num_frames.1 ark:- ark,scp:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/xvector_cmvn_feats_test.1.ark,/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/xvector_cmvn_feats_test.1.scp 
+# Started at Tue Jan 15 09:14:49 CST 2019
+#
+copy-feats --compress=true --write-num-frames=ark,t:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/log/utt2num_frames.1 ark:- ark,scp:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/xvector_cmvn_feats_test.1.ark,/home/rits/workspace/kaldi/egs/speaker_cluster/s5/exp/test_cmn/xvector_cmvn_feats_test.1.scp 
+apply-cmvn-sliding --norm-vars=false --center=true --cmn-window=300 scp:data/test/split1/1/feats.scp ark:- 
+LOG (apply-cmvn-sliding[5.5.145~1-b50a]:main():apply-cmvn-sliding.cc:75) Applied sliding-window cepstral mean normalization to 23 utterances, 0 had errors.
+LOG (copy-feats[5.5.145~1-b50a]:main():copy-feats.cc:143) Copied 23 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jan 15 09:14:49 CST 2019, elapsed time 0 seconds

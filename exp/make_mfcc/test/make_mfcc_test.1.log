@@ -1,0 +1,36 @@
+# extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.1 ark:- | compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 ark:- ark,scp:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/mfcc/raw_mfcc_test.1.ark,/home/rits/workspace/kaldi/egs/speaker_cluster/s5/mfcc/raw_mfcc_test.1.scp 
+# Started at Tue Jan 15 09:14:48 CST 2019
+#
+compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+extract-segments scp,p:data/test/wav.scp exp/make_mfcc/test/segments.1 ark:- 
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 ark:- ark,scp:/home/rits/workspace/kaldi/egs/speaker_cluster/s5/mfcc/raw_mfcc_test.1.ark,/home/rits/workspace/kaldi/egs/speaker_cluster/s5/mfcc/raw_mfcc_test.1.scp 
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_01
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_02
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_03
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_04
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_05
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_06
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_07
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_08
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_09
+LOG (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:172) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_10
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_11
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_12
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_13
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_14
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_15
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_16
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_17
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_18
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_19
+LOG (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:172) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_20
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_21
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_22
+LOG (extract-segments[5.5.145~1-b50a]:main():extract-segments.cc:193) Successfully processed 23 lines out of 23 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:173) Processed features for key test_23
+LOG (compute-mfcc-feats[5.5.145~1-b50a]:main():compute-mfcc-feats.cc:176)  Done 23 out of 23 utterances.
+LOG (copy-feats[5.5.145~1-b50a]:main():copy-feats.cc:143) Copied 23 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Jan 15 09:14:49 CST 2019, elapsed time 1 seconds

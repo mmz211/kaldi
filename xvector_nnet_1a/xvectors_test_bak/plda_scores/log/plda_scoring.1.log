@@ -1,0 +1,14 @@
+# ivector-plda-scoring-dense --target-energy=0.9 xvector_nnet_1a/xvectors_test/plda ark:xvector_nnet_1a/xvectors_test/plda_scores/tmp/split1/1/spk2utt "ark:ivector-subtract-global-mean xvector_nnet_1a/xvectors_test/mean.vec scp:xvector_nnet_1a/xvectors_test/plda_scores/tmp/split1/1/feats.scp ark:- | transform-vec xvector_nnet_1a/xvectors_test/transform.mat ark:- ark:- | ivector-normalize-length ark:- ark:- |" ark,scp:xvector_nnet_1a/xvectors_test/plda_scores/scores.1.ark,xvector_nnet_1a/xvectors_test/plda_scores/scores.1.scp 
+# Started at Sat Jan  5 01:48:49 CST 2019
+#
+ivector-plda-scoring-dense --target-energy=0.9 xvector_nnet_1a/xvectors_test/plda ark:xvector_nnet_1a/xvectors_test/plda_scores/tmp/split1/1/spk2utt 'ark:ivector-subtract-global-mean xvector_nnet_1a/xvectors_test/mean.vec scp:xvector_nnet_1a/xvectors_test/plda_scores/tmp/split1/1/feats.scp ark:- | transform-vec xvector_nnet_1a/xvectors_test/transform.mat ark:- ark:- | ivector-normalize-length ark:- ark:- |' ark,scp:xvector_nnet_1a/xvectors_test/plda_scores/scores.1.ark,xvector_nnet_1a/xvectors_test/plda_scores/scores.1.scp 
+ivector-normalize-length ark:- ark:- 
+transform-vec xvector_nnet_1a/xvectors_test/transform.mat ark:- ark:- 
+ivector-subtract-global-mean xvector_nnet_1a/xvectors_test/mean.vec scp:xvector_nnet_1a/xvectors_test/plda_scores/tmp/split1/1/feats.scp ark:- 
+LOG (ivector-subtract-global-mean[5.5.145~1-b50a]:main():ivector-subtract-global-mean.cc:108) Wrote 204 mean-subtracted iVectors
+LOG (transform-vec[5.5.145~1-b50a]:main():transform-vec.cc:85) Applied transform to 204 vectors.
+LOG (ivector-normalize-length[5.5.145~1-b50a]:main():ivector-normalize-length.cc:90) Processed 204 iVectors.
+LOG (ivector-normalize-length[5.5.145~1-b50a]:main():ivector-normalize-length.cc:94) Average ratio of iVector to expected length was 0.998481, standard deviation was 0.0550975
+LOG (ivector-plda-scoring-dense[5.5.145~1-b50a]:main():ivector-plda-scoring-dense.cc:211) Processed 1 recordings, 0 had errors.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jan  5 01:48:49 CST 2019, elapsed time 0 seconds

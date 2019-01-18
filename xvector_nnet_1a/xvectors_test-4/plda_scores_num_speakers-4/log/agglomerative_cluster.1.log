@@ -1,0 +1,6 @@
+# agglomerative-cluster --threshold=0.5 --read-costs=false --reco2num-spk-rspecifier=ark,t:data/test/reco2num_spk "scp:utils/filter_scp.pl xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/tmp/split1/1/spk2utt xvector_nnet_1a/xvectors_test/plda_scores/scores.scp |" ark,t:xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/tmp/split1/1/spk2utt ark,t:xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/labels.1 
+# Started at Fri Jan  4 22:18:52 CST 2019
+#
+agglomerative-cluster --threshold=0.5 --read-costs=false --reco2num-spk-rspecifier=ark,t:data/test/reco2num_spk 'scp:utils/filter_scp.pl xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/tmp/split1/1/spk2utt xvector_nnet_1a/xvectors_test/plda_scores/scores.scp |' ark,t:xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/tmp/split1/1/spk2utt ark,t:xvector_nnet_1a/xvectors_test/plda_scores_num_speakers/labels.1 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Jan  4 22:18:52 CST 2019, elapsed time 0 seconds

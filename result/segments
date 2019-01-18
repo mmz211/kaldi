@@ -1,0 +1,25 @@
+5 test_01 test 0.830 1.770
+5 test_02 test 1.890 6.950
+5 test_03 test 7.240 8.470
+5 test_04 test 8.490 11.800
+5 test_05 test 11.810 13.890
+5 test_06 test 14.250 18.970
+2 test_07 test 18.980 23.770
+5 test_08 test 23.810 27.160
+4 test_09 test 27.170 34.630
+5 test_10 test 37.360 44.470
+5 test_11 test 44.480 53.480
+5 test_12 test 53.830 64.650
+5 test_13 test 64.650 71.410
+5 test_14 test 71.420 88.930
+5 test_15 test 89.600 90.480
+1 test_16 test 92.550 101.740
+1 test_17 test 101.750 111.250
+1 test_18 test 111.270 121.960
+3 test_19 test 124.460 130.440
+test_20 test 130.440 131.120
+3 test_21 test 131.140 141.700
+3 test_22 test 141.720 166.340
+4 test_23 test 166.540 171.560
+
+第20行在rttm中没有对应的行，包含在rtttm的第36行，应判别为5.
